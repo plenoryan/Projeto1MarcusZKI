@@ -1,0 +1,60 @@
+
+.Cco{
+	color: rgb(from rgb(253, 253, 253) r g b);
+	
+}
+.cc{
+	background-color: rgb(145, 52, 52);
+}
+
+.cl{
+text-align: right;
+}
+
+.oop{
+	text-align: center;
+	color: #f8f8f8;
+}
+
+.lft{
+	text-align: left;
+}
+
+.header{
+	
+height: 120;
+	position: relative;
+
+	
+}
+
+.menu li{
+display: inline;
+	
+}
+
+.menu{
+
+
+	position: absolute;
+	right: 50px;
+	bottom: 25px;
+
+}
+
+.ccc{
+	background-color: rgb(145, 52, 52);
+	
+}
+
+.centerr{
+	display: inline;
+}
+
+.centeright{
+	text-align: right;
+}
+
+.centerleft{
+	text-align: left;
+}
