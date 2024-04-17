@@ -4,7 +4,7 @@
 	
 }
 .cc{
-	background-color: rgb(145, 52, 52);
+	background-color: rgb(184, 35, 35);
 }
 
 .cl{
@@ -43,12 +43,13 @@ display: inline;
 }
 
 .ccc{
-	background-color: rgb(145, 52, 52);
+	background-color: rgb(184, 35, 35);
 	
 }
 
 .centerr{
-	display: inline;
+	margin: 0 auto;
+	text-align: center;
 }
 
 .centeright{
