@@ -1,19 +1,20 @@
-
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
 .Cco{
 	color: rgb(from rgb(253, 253, 253) r g b);
+	font-family: Arial, Helvetica, sans-serif;
+	
 	
 }
 .cc{
-	background-color: rgb(184, 35, 35);
+	background-color: rgb(206, 138, 74);
 }
 
 .cl{
 text-align: right;
-}
-
-.oop{
-	text-align: center;
-	color: #f8f8f8;
 }
 
 .lft{
@@ -22,29 +23,36 @@ text-align: right;
 
 .header{
 	
-height: 120;
+	height: 120;
 	position: relative;
+	background-color: rgb(206, 138, 74);
+	color: rgb(0, 0, 0);
 
-	
-}
+}	
 
-.menu li{
+.menu li{ 
 display: inline;
+position: absolute;
+	right: 50px;
+	bottom: 25px;
 	
 }
 
 .menu{
 
-
 	position: absolute;
 	right: 50px;
-	bottom: 25px;
+	bottom: 45px;
+	
 
 }
 
-.ccc{
-	background-color: rgb(184, 35, 35);
+.menuu{
+	margin: 0 auto;
+	text-align: center;
+	top: 100px;
 	
+
 }
 
 .centerr{
@@ -58,4 +66,43 @@ display: inline;
 
 .centerleft{
 	text-align: left;
+}
+
+.corfonte{
+	color: #4ef07e;
+
+}
+.zz{
+	padding: 20px;
+	background-color: rgb(206, 138, 74);
+	border:0px 0px 0px solid black ;
+	width: 500px;
+	margin-bottom: 5px;
+	border-radius: 10px;
+	display: flex;
+	justify-content: center;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
+select[id="Gênero"],
+textarea{
+	padding: 5px;
+	box-sizing: border-box;
+	width: 300px;
+	height: 35px;
+	display: flex;
+	justify-content: center;
+	border-radius: 5px;
+	text-align: justify;
+	border: none;
+}
+a:link{
+	text-decoration: none;
+}
+
+body{
+	font-family: Arial, Helvetica, sans-serif;
 }
