@@ -23,10 +23,13 @@ text-align: right;
 
 .header{
 	
-	height: 120;
-	position: relative;
+	display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
 	background-color: rgb(206, 138, 74);
 	color: rgb(0, 0, 0);
+	
 
 }	
 
@@ -42,15 +45,16 @@ position: absolute;
 
 	position: absolute;
 	right: 50px;
-	bottom: 45px;
+	bottom: 855px;
 	
 
 }
 
 .menuu{
-	margin: 0 auto;
-	text-align: center;
+	
 	top: 100px;
+	margin-top: -50px;
+	margin-bottom: 20px;
 	
 
 }
@@ -106,3 +110,102 @@ a:link{
 body{
 	font-family: Arial, Helvetica, sans-serif;
 }
+
+.rr{
+	display: flex;
+	align-items: center;
+}
+
+.div{
+	height: 250px;
+	border: 1px solid black;
+	transition-duration: 1s;
+	animation-timing-function: ease-in-out;
+	flex-grow: 1;
+	background-size: cover;
+	background-position: center center;
+}
+
+#div1{
+	background-color: aqua;
+	background-image: url(../img/Roda.webp);
+}
+#div2{
+	background-color: blueviolet;
+	background-image: url(../img/Rusa.webp);
+}
+
+#div3{
+	background-color: rgb(211, 12, 12);
+	background-image: url(../img/batebate.jpg);
+}
+
+#div4{
+	background-color: rosybrown;
+	background-image: url(../img/Circo.webp) ;
+}
+
+main{
+	height: 200px;
+	width: 400px;
+	display: flex;
+}
+.m{
+	position: relative;
+	font-family: Arial, Helvetica, sans-serif;
+	color: rgb(0, 0, 0);
+	align-items: center;
+	font-size: 72px;
+}
+
+.m::after{
+content: "Desfrute de uma linda vista da cidade apartir da nossa roda gigante. ";
+position: absolute;
+background-color: rgb(206, 138, 74);
+top: 200px;
+font-size: 20pt;
+left: -100px;
+width: 800px;
+height: 80px;
+font-weight: 600 ;
+opacity: 0;
+transition: opacity 500ms, tranform 500ms ;
+}
+
+.m:is(:hover, :focus)::after{
+	opacity: 1;
+	transform: translateY(70px);
+}
+
+.b{
+	position: relative;
+	font-family: Arial, Helvetica, sans-serif;
+	color: rgb(0, 0, 0);
+	align-items: center;
+	font-size: 72px;
+	
+}
+
+.b::after{
+content: "Sinta a adrenalina enquanto percorre curvas emocionantes na nossa Montanha Russa. ";
+position: absolute;
+background-color: rgb(206, 138, 74);
+top: 200px;
+font-size: 20pt;
+left: -100px;
+width: 800px;
+height: 80px;
+font-weight: 600 ;
+opacity: 0;
+transition: opacity 500ms, tranform 500ms ;
+}
+
+.b:is(:hover, :focus)::after{
+	opacity: 1;
+	transform: translateY(70px);
+}
+
+.divv:hover{
+	flex-grow: 7;	
+}
+

@@ -15,7 +15,8 @@
 
 <body class=" cc ">
     <div class="zz centerr">
-    <form >
+        <script src="js/main.js"></script>
+    <form name="Cadastro" action="" onsubmit="senhaok();" method="POST">
         Realizar Cadastro
         <br>
         <br>
@@ -26,10 +27,10 @@
         <input type="email" id="E-mail" name="E-mail" placeholder="Digite seu e-mail"> <br>
 
         <label for="Senha">Senha:</label><br>
-        <input type="password" id="Senha" name="Senha"  required minlength="8" > <br>
+        <input type="password" id="Senha" name="Senha"  size="8" required onchange="conferirsenha()" > <br>
 
         <label for="confirmar_senha">Confirmar Senha:</label><br>
-        <input type="password" id="confirmar_senha" name="confirmar_senha"  required minlength="8" > <br>
+        <input type="password" id="confirmar_senha" name="confirmar_senha"  size="8" required onchange="conferirsenha()" > <br>
 
         <label for="data_nascimento">Data de Nascimento:</label><br>
         <input type="date" id="data_nascimento" name="data_nascimento" required><br>
@@ -44,6 +45,7 @@
         <br>   
         <br>
         <input type="submit" value="Enviar">
+        
     </form>
     <br>
     <br>
