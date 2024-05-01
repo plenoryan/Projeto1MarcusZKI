@@ -12,5 +12,22 @@ function conferirsenha(){
 }
 
 function senhaok(){
-    alert("Senhas estao ok!")
+    alert("Cadastro Concluido!!! ")
 }
+
+$(document).ready(function(){
+    console.log('teste');
+    // Captura o clique no botão de alternância de menu
+    $('.menu-toggle').click(function(){
+        // Alterna a visibilidade do menu
+        $('nav ul').slideToggle();
+    });
+
+    // Esconde o menu ao redimensionar a janela para desktop
+    $(window).resize(function(){
+        if($(window).width() > 767) {
+            $('nav ul').removeAttr('style');
+        }
+    });
+});
+

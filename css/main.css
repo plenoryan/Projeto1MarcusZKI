@@ -6,8 +6,6 @@
 .Cco{
 	color: rgb(from rgb(253, 253, 253) r g b);
 	font-family: Arial, Helvetica, sans-serif;
-	
-	
 }
 .cc{
 	background-color: rgb(206, 138, 74);
@@ -21,6 +19,7 @@ text-align: right;
 	text-align: left;
 }
 
+
 .header{
 	
 	display: flex;
@@ -33,43 +32,9 @@ text-align: right;
 
 }	
 
-.menu li{ 
-display: inline;
-position: absolute;
-	right: 50px;
-	bottom: 25px;
-	
-}
-
-.menu{
-
-	position: absolute;
-	right: 50px;
-	bottom: 855px;
-	
-
-}
-
-.menuu{
-	
-	top: 100px;
-	margin-top: -50px;
-	margin-bottom: 20px;
-	
-
-}
-
 .centerr{
 	margin: 0 auto;
 	text-align: center;
-}
-
-.centeright{
-	text-align: right;
-}
-
-.centerleft{
-	text-align: left;
 }
 
 .corfonte{
@@ -92,6 +57,7 @@ input[type="email"],
 input[type="password"],
 input[type="date"],
 select[id="Gênero"],
+
 textarea{
 	padding: 5px;
 	box-sizing: border-box;
@@ -111,11 +77,6 @@ body{
 	font-family: Arial, Helvetica, sans-serif;
 }
 
-.rr{
-	display: flex;
-	align-items: center;
-}
-
 .div{
 	height: 250px;
 	border: 1px solid black;
@@ -129,6 +90,7 @@ body{
 #div1{
 	background-color: aqua;
 	background-image: url(../img/Roda.webp);
+
 }
 #div2{
 	background-color: blueviolet;
@@ -184,12 +146,13 @@ transition: opacity 500ms, tranform 500ms ;
 	align-items: center;
 	font-size: 72px;
 	
+	
 }
 
 .b::after{
 content: "Sinta a adrenalina enquanto percorre curvas emocionantes na nossa Montanha Russa. ";
 position: absolute;
-background-color: rgb(206, 138, 74);
+background-color: rgb(255, 255, 255);
 top: 200px;
 font-size: 20pt;
 left: -100px;
@@ -198,6 +161,8 @@ height: 80px;
 font-weight: 600 ;
 opacity: 0;
 transition: opacity 500ms, tranform 500ms ;
+border: 3px  #4ef07e solid;
+border-radius: none;
 }
 
 .b:is(:hover, :focus)::after{
@@ -209,3 +174,93 @@ transition: opacity 500ms, tranform 500ms ;
 	flex-grow: 7;	
 }
 
+
+nav ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	display: none;
+}
+nav ul li a{
+	display: block;
+	margin-bottom: 10px;
+	text-align: center;
+	color: white;
+}
+footer {
+	background-color: #333;
+	color: #fff;
+	padding: 10px;
+	text-align: center;
+}
+
+@media only screen  and (max-width: 767px){
+	.Cco{
+		color: rgb(from rgb(255, 255, 255) r g b);
+		font-family: Arial, Helvetica, sans-serif;
+	}
+	
+	nav ul{
+		display: none;
+	}
+	
+	.menu-toggle {
+		display: block; 
+		position: absolute; 
+		top: 20px;
+		right: 20px;
+		background: none;
+		border: none;
+		color: #fff;
+		font-size: 20px;
+		cursor: pointer;
+		z-index: 999;
+		
+	}
+
+	.menu-toggle:focus {
+		outline: none;
+	}
+
+	.header{
+		padding: 15px;
+	}
+
+	
+
+}
+@media only screen and (min-width: 768px) {
+	header{
+		padding: 40px;
+	}
+	nav ul {
+		justify-content: flex-end;
+		display: flex;
+	}
+	nav ul li {
+		margin-right: 40px;
+	}
+
+	section {
+		margin: 40px;
+		padding: 40px;
+	}
+
+	.menu-toggle{
+		display: none;
+	}
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header {
+	background-color: #333;
+	color: #fff;
+	padding: 20px;
+	text-align: center;
+	position: relative; /* Permite posicionamento absoluto do botão hamburger */
+}
