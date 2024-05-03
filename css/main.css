@@ -190,9 +190,13 @@ nav ul{
 	display: none;
 }
 nav ul li a{
-	display: block;
-	margin-bottom: 10px;
+	display:inline;
+	position:relative;
+	margin-top: 50%;
+	right: 100%;
+	margin-bottom: 5vw;
 	text-align: center;
+	font-size: 1.6vw;
 	color: white;
 }
 footer {
@@ -208,20 +212,33 @@ footer {
 		color: rgb(from rgb(255, 255, 255) r g b);
 		font-family: Arial, Helvetica, sans-serif;
 	}
-	
+	.header-content{
+		font-size: 4vw;
+		display: flex;
+		
+	}
+	nav ul li a{
+		display:block;
+		margin-bottom: 5vw;
+		text-align: center;
+		font-size:100%;
+		color: white;
+	}
 	nav ul{
 		display: none;
+		margin-top: 5%;
+		bottom: 0;
 	}
 	
 	.menu-toggle {
-		display: block; 
-		position: absolute; 
-		top: 20px;
-		right: 20px;
+		display: block;
+		position: absolute;
+		top: auto;
+		right: 5%;
 		background: none;
 		border: none;
 		color: #fff;
-		font-size: 20px;
+		font-size: 7vw;
 		cursor: pointer;
 		z-index: 999;
 		
@@ -256,6 +273,10 @@ footer {
 
 	.menu-toggle{
 		display: none;
+		top: 25%;
+		right: 5%;
+		font-size: 150%;
+		margin-top: 50%;
 	}
 
 	.header-content {
